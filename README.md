@@ -20,7 +20,7 @@ config.yml
 
 *Action.php
 
-    $palabras = array('hola','que','tal')
+    $palabras = array('hola que tal')
     $search  = $this->get('buscador');
     $results = $search->Query($palabras, 'nombre_index');
 
