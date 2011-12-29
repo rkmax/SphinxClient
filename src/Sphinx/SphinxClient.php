@@ -19,6 +19,8 @@
 // PHP version of Sphinx searchd client (PHP API)
 /////////////////////////////////////////////////////////////////////////////
 
+namespace Sphinx;
+
 /// known searchd commands
 define ( "SEARCHD_COMMAND_SEARCH",		0 );
 define ( "SEARCHD_COMMAND_EXCERPT",		1 );
@@ -381,8 +383,6 @@ function sphFixUint ( $value )
 	}
 }
 
-namespace Sphinx;
-
 /// sphinx searchd client class
 class SphinxClient
 {
@@ -428,7 +428,7 @@ class SphinxClient
 	/////////////////////////////////////////////////////////////////////////////
 
 	/// create a new client object and fill defaults
-	function SphinxClient ()
+	function __construct ()
 	{
 		// per-client-object settings
 		$this->_host		= "localhost";
@@ -475,7 +475,7 @@ class SphinxClient
 
 	function __destruct()
 	{
-		if ( $this->_socket !== false )
+		if ( $this->_socket !== false  )
 			fclose ( $this->_socket );
 	}
 
