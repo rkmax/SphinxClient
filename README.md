@@ -13,7 +13,7 @@ config.yml
 
     services:
          buscador:
-             class: SphinxClient
+             class: Sphinx\SphinxClient
              calls:
                  - [setArrayResult, [true]]
                  - [setLimits, [0, 20, 1000]]
@@ -24,7 +24,7 @@ config.yml
     $search  = $this->get('buscador');
     $results = $search->Query($palabras, 'nombre_index');
 
-Source: Taken from the sf2 mailing list.
+Source: Taken from the sf2 mailing list with some minor fixes
 
 ----
 
