@@ -1,0 +1,27 @@
+{
+    "name":"rkmax/sphinx-client",
+    "description":"SphinxClient (SphinxAPI) for PHP5.3 and above to be used with SphinxSearch",
+    "type":"library",
+    "keywords":[ "search", "sphinx", "sphinxapi", "sphinx search", "search engine" ],
+    "homepage":"https://github.com/rkmax/SphinxClient",
+    "license":"MIT",
+    "version": "1.0.0",
+    "authors":[
+        {
+            "name":"Julian Reyes Escrigas",
+            "email":"julian.reyes.es@gmail.com",
+            "homepage":"https://github.com/rkmax",
+            "role":"Lead Developer"
+        }
+    ],
+    "require":{
+        "php":">=5.3.0"
+    },
+    "require-dev":{
+    },
+    "autoload":{
+        "psr-0":{
+            "SphinxClient":"src/Sphinx/"
+        }
+    }
+}
