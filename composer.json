@@ -5,7 +5,7 @@
     "keywords":[ "search", "sphinx", "sphinxapi", "sphinx search", "search engine" ],
     "homepage":"https://github.com/rkmax/SphinxClient",
     "license":"MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors":[
         {
             "name":"Julian Reyes Escrigas",
